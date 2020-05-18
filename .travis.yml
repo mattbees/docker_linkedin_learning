@@ -1,0 +1,6 @@
+sudo: required
+services: docker
+
+script:
+  - docker build -t my_dockerhub_name/node .
+  - docker images my_dockerhub_name/node
